@@ -1,0 +1,14 @@
+<%= form_with model: @post do |f| %>
+  <h3>新規</h3>
+    <h3>iamge</h3>
+    <%= f.file_field :image ,accept: "image/" %>
+
+    <h3>name</h3>
+    <%= f.text_area :shop_name %>
+
+    <h3>cption</h3>
+    <%= f.text_field :caption %>
+    
+    <%= f.submit "発射" %>
+<% end %>
+
